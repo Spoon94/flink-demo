@@ -44,7 +44,7 @@ public class WatermarkDemo {
 
         private Long currentTimeStamp = 0L;
 
-        private Long maxOutOfOrderness = 0L;
+        private Long maxOutOfOrderness = 5000L;
 
         @Nullable
         @Override
