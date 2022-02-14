@@ -18,7 +18,7 @@ public class WordCountSqlDemo {
         ExecutionEnvironment fbEnv = ExecutionEnvironment.getExecutionEnvironment();
         BatchTableEnvironment fbTableEnv = BatchTableEnvironment.create(fbEnv);
 
-        String words = "hello flink hello lagou";
+        String words = "hello flink hello spark";
         List<WordAndCount> wordAndCountList = Splitter.on(" ").splitToStream(words).map(word->new WordAndCount(word,1)).collect(
             Collectors.toList());
 
